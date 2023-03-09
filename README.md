@@ -1,6 +1,10 @@
 # Foundations_of_Deep_Learning_Project
 Rice grain image classification with CNNs
 
+# How to run the code
+
+Unless otherwise specified in the notebook section all codes can be runned in Google Colaboratory platform. All notebooks all already setted to import the necessary packages and also in this way you can easily use a GPU!
+
 DATASET: https://www.muratkoklu.com/datasets/
 
 [1] Koklu, M., Cinar, I., & Taspinar, Y. S. (2021). Classification of rice varieties with deep learning methods. Computers and Electronics in Agriculture, 187, 106285. https://doi.org/10.1016/j.compag.2021.106285
