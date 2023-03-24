@@ -1,7 +1,10 @@
 # Foundations_of_Deep_Learning_Project
 Rice grain image classification with CNNs
 
-**DATASET**: https://www.muratkoklu.com/datasets/
+**DATASET**: https://www.muratkoklu.com/datasets/ <br>
+Dataset containing 75000 images belonging to 5 rice classes: Arborio, Basmati, Ipsala, Jasmine and Karadak
+
+<img src="images/rice_grain.PNG" width=320 height=120>
 
 # How to run the code
 
