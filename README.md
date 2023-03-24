@@ -24,7 +24,7 @@ Main Results from scratch:
 
 Main Results transfer learning:
 
-<img src="images/CNN_transfer_learning_results.PNG" width=400 height=250>
+<img src="images/CNN_transfer_learning_results.PNG" width=350 height=250>
 
 # How to run the code
 
