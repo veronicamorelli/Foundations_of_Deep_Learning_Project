@@ -6,6 +6,26 @@ Dataset containing 75000 images belonging to 5 rice classes: Arborio, Basmati, I
 
 <img src="images/rice_grain.PNG" width=500 height=150>
 
+Main steps:
+
+• Understanding of the Dataset
+• Loading and Sampling
+• EDA: Exploratory Data Analysis
+• Preprocessing + Splitting data into Training and Validation
+Set
+• Classification: Neural Network from scratch and Transfer
+Learning
+• Selection and Comparison of the Best Models
+• Fitting on Test data and Best Model Choice
+
+Main Results from scratch:
+
+<img src="images/CNN_from_scratch_results.PNG" width=1000 height=300>
+
+Main Results transfer learning:
+
+<img src="images/CNN_transfer_learning_results.PNG" width=1000 height=300>
+
 # How to run the code
 
 Unless otherwise specified in the notebook section all codes can be runned in Google Colaboratory platform. All notebooks all already setted to import the necessary packages and also in this way you can easily use a GPU!
