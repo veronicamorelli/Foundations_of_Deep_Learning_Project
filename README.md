@@ -20,11 +20,11 @@ Learning
 
 Main Results from scratch:
 
-<img src="images/CNN_from_scratch_results.PNG" width=800 height=500>
+<img src="images/CNN_from_scratch_results.PNG" width=750 height=450>
 
 Main Results transfer learning:
 
-<img src="images/CNN_transfer_learning_results.PNG" width=450 height=300>
+<img src="images/CNN_transfer_learning_results.PNG" width=400 height=250>
 
 # How to run the code
 
