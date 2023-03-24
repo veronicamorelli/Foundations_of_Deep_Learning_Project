@@ -20,7 +20,7 @@ Learning
 
 Main Results from scratch:
 
-<img src="images/CNN_from_scratch_results.PNG" width=750 height=380>
+<img src="images/CNN_from_scratch_results.PNG" width=650 height=380>
 
 Main Results transfer learning:
 
