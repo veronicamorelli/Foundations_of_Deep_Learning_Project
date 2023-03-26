@@ -3,6 +3,8 @@ Rice grain image classification with CNNs
 
 To develop the project we use the dataset available on Kaggle at the following link: https://www.kaggle.com/datasets/muratkokludataset/rice-image-dataset. The dataset is called *Rice Image Dataset*. It contains 75K images including 15K images for each rice variety that are: Arborio, Basmati, Ipsala, Jasmine and Karacadag.
 
+<img src="images/rice_grain.PNG" width=600 height=150>
+
 We decide to use the dataset to solve a **classification problem**. We want to find a performing deep learning model to correctly classify 5 types of rice.
 
 We mainly use two approaches:
@@ -15,12 +17,6 @@ In the second case we use completely a Pre-trained Neural Network adding a Feed-
 Neural networks with the best performances are presented in this notebook. <br>
 To finally choose the best model, we created a new dataset, called *test* on which we fitted the two models. The model with better classificatory goodness-of-fit is chosen as the best model. 
 
-
-**DATASET**: https://www.muratkoklu.com/datasets/ <br>
-Dataset containing 75000 images belonging to 5 rice classes: Arborio, Basmati, Ipsala, Jasmine and Karadak
-
-<img src="images/rice_grain.PNG" width=600 height=150>
-
 ## Main Steps
 
 - Understanding of the Dataset
@@ -31,7 +27,7 @@ Dataset containing 75000 images belonging to 5 rice classes: Arborio, Basmati, I
 - Selection and Comparison of the Best Models
 - Fitting on Test data and Best Model Choice
 
-# Main Results CNNs from Scratch
+## Main Results CNNs from Scratch
 
 | Model Name  | Network Architecure + Properties | Accuracy Train | Accuracy Validation | Notes        	                          |
 | ----------- | -------------------------------- | -------------- | ------------------- | --------------------------------------- |
@@ -67,6 +63,45 @@ Dataset containing 75000 images belonging to 5 rice classes: Arborio, Basmati, I
 | Vgg16 | Pre-trained Network + FFN+Droput + CallBacks (EarlyStopping, ReduceLrOnPlateau) | 0.83 | 0.85 | Although the performance is the worst among trained networks, the trend of loss and accuracy curves is excellent. |
 | Vgg16 cut1 | Vgg 16 cut1 Pre-trained Network + Avg global pooling + FFN + Dropout + CallBacks (EarlyStopping, ReduceLrOnPlateau) | 0.87 | 0.95 | Accuracy values are improved with a cut to block3_pool. |
 | Vgg16 cut2 | Vgg 16 cut2 Pre-trained Network + Avg global pooling + FFN+Dropout + CallBacks (EarlyStopping) | 0.96 | 0.97 | Accuracy values are definitely improved with a cut to block4_pool. |
+
+## Final Results
+
+The best model from scratch is the **Model_v7**. <br>
+The best pre-trained netework selected is the **ResNet50**.
+
+Models have been evaluated on test set. The test dataset contains 100 images per class, consequently it contains 500 images.
+
+**Classification Reports of Test Set** 
+
+Neural Network from Scratch
+
+| precision | Recall | f1-score | Support |
+| --------- | --------- | --------- | --------- |
+| Arborio | 1.000 | 0.860 | 0.925 | 100.000 |
+| Basmati | 0.980 | 1.000 | 0.990 | 100.000 | 
+| Ipsala | 0.943 | 1.000 | 0.971 | 100.000 |
+| Jasmine | 0.916 | 0.980 | 0.947 | 100.000 |
+| Karacadag | 1.000 | 0.990 | 0.995 | 100.000 |
+| accuracy | 0.966 | 0.966 | 0.966 | 0.966 |
+| macro avg | 0.986 | 0.966 | 0.966 | 500.000 |
+| weighted avg | 0.986 | 0.966 | 0.966 | 500.000 |
+
+Neural Network with Transfer Learning
+
+| precision | Recall | f1-score | Support |
+| --------- | --------- | --------- | --------- |
+| Arborio | 0.971 | 1.000 | 0.985 | 100.000 |
+| Basmati | 0.962 | 1.000 | 0.980 | 100.000 | 
+| Ipsala | 1.000 | 1.000 | 1.000 | 100.000 |
+| Jasmine | 1.000 | 0.950 | 0.974 | 100.000 |
+| Karacadag | 1.000 | 0.980 | 0.990 | 100.000 |
+| accuracy | 0.986 | 0.986 | 0.986 | 0.986 |
+| macro avg | 0.986 | 0.986 | 0.986 | 500.000 |
+| weighted avg | 0.986 | 0.986 | 0.986 | 500.000 |
+
+
+
+
 
 # How to run the code
 
