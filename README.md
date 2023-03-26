@@ -32,9 +32,26 @@ Dataset containing 75000 images belonging to 5 rice classes: Arborio, Basmati, I
 | Model v6_5 | 3 CNN (32, 64, 128) + batch_norm + ridge_regular. + He weight inizialization + early_stop | 0.98 | 0.95 | The reducing learning rate mechanism is added to try to make the model more stable and increase its performance. |
 | Model v7 | 3 CNN (32, 64, 128) + batch_norm + ridge_regular. + He weight inizialization + Reduce learning rate | 0.996 | 0.98 | The model achieves very good performance on both training and validation. In addition, the model is very stable in the 20th epoch onwards. |
 
-Main Results transfer learning:
+## Transfer Learning
 
-<img src="images/CNN_transfer_learning_results.PNG" width=350 height=200>
+### Steps: 
+
+- Preprocess Data: The images are converted from RGB to BGR, then  each color channel is zero-centered with respect to the ImageNet  dataset, without scaling.
+- Loading of the pre-trained network.
+- Freeze the convolutional base before compiling and train the  model.
+- Define a FNN architecture.
+- Callbacks.
+- Compile and train.
+
+## Main Results
+
+| Model Name  | Network Architecure + Properties | Accuracy Train | Accuracy Validation | Notes        	                          |
+| ----------- | -------------------------------- | -------------- | ------------------- | --------------------------------------- |
+| Resnet50 | Pre-trained Network+ FFN + Dropout + CallBacks (EarlyStopping, ReduceLrOnPlateau) | 0.97 | 0.98 | The network performs very well and it converges at the 14th epoch without ever overfitting. |
+| MobileNet | Pre-trained Network + FFN+Droput + CallBacks (EarlyStopping, ReduceLrOnPlateau) | 0.88 | 0.85 | The performance is slightly worse than the previous network. In addition, the network tends to overfit. |
+| Vgg16 | Pre-trained Network + FFN+Droput + CallBacks (EarlyStopping, ReduceLrOnPlateau) | 0.83 | 0.85 | Although the performance is the worst among trained networks, the trend of loss and accuracy curves is excellent. |
+| Vgg16 cut1 | Vgg 16 cut1 Pre-trained Network + Avg global pooling + FFN + Dropout + CallBacks (EarlyStopping, ReduceLrOnPlateau) | 0.87 | 0.95 | Accuracy values are improved with a cut to block3_pool. |
+| Vgg16 cut2 | Vgg 16 cut2 Pre-trained Network + Avg global pooling + FFN+Dropout + CallBacks (EarlyStopping) | 0.96 | 0.97 | Accuracy values are definitely improved with a cut to block4_pool. |
 
 # How to run the code
 
