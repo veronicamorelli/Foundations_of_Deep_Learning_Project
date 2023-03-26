@@ -1,4 +1,4 @@
-# Foundations_of_Deep_Learning_Project
+# Foundations of Deep Learning Project
 Rice grain image classification with CNNs
 
 **DATASET**: https://www.muratkoklu.com/datasets/ <br>
@@ -6,7 +6,7 @@ Dataset containing 75000 images belonging to 5 rice classes: Arborio, Basmati, I
 
 <img src="images/rice_grain.PNG" width=600 height=150>
 
-Main steps:
+## Main Steps
 
 - Understanding of the Dataset
 - Loading and Sampling
@@ -16,7 +16,7 @@ Main steps:
 - Selection and Comparison of the Best Models
 - Fitting on Test data and Best Model Choice
 
-Main Results from scratch:
+# Main Results CNNs from Scratch
 
 | Model Name  | Network Architecure + Properties | Accuracy Train | Accuracy Validation | Notes        	                          |
 | ----------- | -------------------------------- | -------------- | ------------------- | --------------------------------------- |
