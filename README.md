@@ -4,7 +4,7 @@ Rice grain image classification with CNNs
 **DATASET**: https://www.muratkoklu.com/datasets/ <br>
 Dataset containing 75000 images belonging to 5 rice classes: Arborio, Basmati, Ipsala, Jasmine and Karadak
 
-<img src="images/rice_grain.PNG" width=500 height=150>
+<img src="images/rice_grain.PNG" width=600 height=150>
 
 Main steps:
 
