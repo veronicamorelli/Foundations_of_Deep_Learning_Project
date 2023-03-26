@@ -56,7 +56,7 @@ To finally choose the best model, we created a new dataset, called *test* on whi
 
 **Cut T1 and T2 on VGG16**
 
-<img src="images/Vgg16_cut.png" width=500 height=300>
+<img src="images/Vgg16_cut.png" width=450 height=250>
 
 ## Main Results
 
@@ -80,7 +80,7 @@ Models have been evaluated on test set. The test dataset contains 100 images per
 - 1st model is Neural Network from Scratch
 - 2nd model is Neural Network with Transfer Learning
 
-<img src="images/best_results_10k.PNG" width=500 height=350>
+<img src="images/best_results_10k.PNG" width=600 height=400>
 
 **Classification Reports of Test Set** 
 
