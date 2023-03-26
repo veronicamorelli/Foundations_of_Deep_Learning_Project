@@ -54,6 +54,10 @@ To finally choose the best model, we created a new dataset, called *test* on whi
 - Callbacks.
 - Compile and train.
 
+**Cut T1 and T2 on VGG16**
+
+<img src="images/Vgg16_cut.PNG" width=600 height=150>
+
 ## Main Results
 
 | Model Name  | Network Architecure + Properties | Accuracy Train | Accuracy Validation | Notes        	                          |
@@ -70,6 +74,13 @@ The best model from scratch is the **Model_v7**. <br>
 The best pre-trained netework selected is the **ResNet50**.
 
 Models have been evaluated on test set. The test dataset contains 100 images per class, consequently it contains 500 images.
+
+**Training and Validation Accuracy**
+
+- 1st model is Neural Network from Scratch
+- 2nd model is Neural Network with Transfer Learning
+
+<img src="images/best_results_10k.PNG" width=600 height=150>
 
 **Classification Reports of Test Set** 
 
